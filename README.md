@@ -5,7 +5,9 @@ It is a is a web application built using Node.js, SvelteKit, and SQLite, designe
 # Notes
 
 To access the application, please go to the /giriş-yap page and use the following credentials:
+<br/>
 Email address: ekaraer97@gmail.com
+<br/>
 Password: Pass1234
 
 The application's language is Turkish. Please use Google Translate to translate the content into English.

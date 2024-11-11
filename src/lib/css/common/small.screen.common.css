@@ -1,0 +1,17 @@
+@media (max-width: 65em) {
+    :root {
+        font-size: 14px;
+    }
+
+    .for-big-screen {
+        display: none !important;
+    }
+
+    .small-screen-w-100 {
+        width: 100% !important;
+    }
+
+    .small-screen-max-w-phone {
+        max-width: var(--max-w-phone);
+    }
+}

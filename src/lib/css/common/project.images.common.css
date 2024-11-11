@@ -1,0 +1,21 @@
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+#image-not-found-search {
+    max-width: 52.5rem;
+
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+
+    aspect-ratio: 16/10;
+}

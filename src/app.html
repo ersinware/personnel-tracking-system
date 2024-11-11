@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="noindex"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Montserrat-Bold.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Montserrat-ExtraBold.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Montserrat-Black.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-Regular.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-Medium.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-SemiBold.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-Bold.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-ExtraBold.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    <link rel="preload"
+          href="%sveltekit.assets%/fonts/Poppins-Black.woff2"
+          fetchpriority="high"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous">
+
+    %sveltekit.head%
+</head>
+
+<script nonce="%sveltekit.nonce%">
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+    window.addEventListener('resize', () => document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`))
+</script>
+
+<body data-sveltekit-preload-data="hover" data-scrollable>
+
+<div style="display: contents">%sveltekit.body%</div>
+
+</body>
+
+</html>

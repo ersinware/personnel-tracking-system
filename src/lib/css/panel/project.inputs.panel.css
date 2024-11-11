@@ -1,0 +1,23 @@
+body {
+    --p-h-input-project-panel: 1.25rem;
+}
+
+#input-project-unit-modal {
+    padding-left: var(--p-h-input-project-panel) !important;
+    padding-right: var(--p-h-input-project-panel) !important;
+}
+
+.input-project-panel {
+    margin-top: 0 !important;
+}
+
+#input-project-unit-modal + label.input-label {
+    left: 1.05rem !important;
+    transform: none !important;
+}
+
+#wrapper-input-project-date {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

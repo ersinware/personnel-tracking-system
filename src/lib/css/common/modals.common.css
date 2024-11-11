@@ -1,0 +1,200 @@
+body {
+    --p-v-modal: calc(var(--p-v) * 1.5);
+    --g-v-d-modal: var(--p-v);
+
+    --max-h-modal: calc(var(--vh-actual) * .9);
+    --max-w-input-modal: 20rem;
+}
+
+.wrapper-modal {
+    left: 50%;
+    z-index: 99999;
+}
+
+.wrapper-modal, .wrapper-modal-content {
+    max-height: var(--max-h-modal);
+}
+
+.wrapper-modal-content {
+    box-sizing: border-box;
+
+    padding-block: var(--p-v-modal);
+    padding-left: var(--p-h-modal);
+    padding-right: var(--p-h-modal);
+
+    overflow-y: scroll;
+}
+
+.title-modal,
+.text-modal,
+.text-modal-big {
+    font-family: Poppins, sans-serif;
+}
+
+.title-modal {
+    line-height: 2.25rem;
+
+    color: var(--color-title) !important;
+
+    font-size: 2rem;
+    font-weight: 800 !important;
+
+    margin-top: .25rem;
+}
+
+.title-modal,
+.text-hint-modal {
+    text-align: center;
+}
+
+.title-modal,
+.text-hint-modal {
+    margin-bottom: .25rem;
+}
+
+.text-modal,
+.text-modal-big {
+    color: var(--color-text) !important;
+}
+
+.text-modal {
+    line-height: 1.25rem;
+
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.text-modal:not(.text-modal-big) {
+    max-width: calc(var(--max-w-input-modal) - 1.5rem);
+}
+
+.text-modal-big {
+    max-width: calc(var(--max-w-phone) - var(--p-h) * 2);
+}
+
+.text-hint-modal {
+    margin-top: .75rem;
+}
+
+.text-hint-modal {
+    line-height: var(--l-h-text-hint-2);
+
+    color: var(--color-text-unimportant) !important;
+
+    font-family: Montserrat, sans-serif;
+    font-size: .65rem;
+    letter-spacing: .0875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-link-modal-invoice {
+    margin-top: .125rem;
+}
+
+.max-w-input-modal {
+    max-width: var(--max-w-input-modal)
+}
+
+.g-v-d-modal {
+    gap: var(--g-v-d-modal);
+}
+
+.wrapper-modal-inputs {
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: var(--max-w-input-modal);
+}
+
+.wrapper-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--p-h-modal-content));
+
+    margin-top: calc(var(--p-v) / 4);
+}
+
+.grid-two-column-modal-big-content {
+    --grid-item-min-width: var(--max-w-input-modal);
+    --grid-layout-gap: var(--g-v-d-modal);
+    --grid-max-column-count: 2;
+    --gap-count: calc(var(--grid-max-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item-max-width: calc((100% - var(--total-gap-width)) / var(--grid-max-column-count));
+
+    grid-template-columns: repeat(auto-fill,
+    minmax(max(var(--grid-item-min-width), var(--grid-item-max-width)), 1fr));
+
+    margin-block: calc(var(--g-v-d-modal) * .625);
+    gap: var(--grid-layout-gap);
+}
+
+.wrapper-image-product-modal-panel {
+    padding: 0 !important;
+
+    cursor: grabbing;
+
+    transition: opacity 0.25s ease-in-out;
+}
+
+.max-w-modal-content-small {
+    max-width: 28.5rem;
+}
+
+@media (min-width: 65.001em) {
+    body {
+        --p-h-modal: calc(var(--p-h) * 1.5);
+        --p-h-modal-content: 2rem;
+    }
+
+    .wrapper-modal {
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 1.5rem;
+    }
+
+    .wrapper-modal-big {
+        width: min(calc(100vw - 2 * var(--p-h)), calc(var(--max-w-input-modal) * 2 + var(--p-v) + 8.5rem)) !important;
+    }
+
+    .big-screen-max-w-modal-content-small {
+        width: 28.5rem;
+    }
+}
+
+@media (max-width: 65em) {
+    body {
+        --p-h-modal: var(--p-h);
+        --p-h-modal-content: 1.5rem;
+    }
+
+    .wrapper-modal {
+        bottom: 0;
+        transform: translateX(-50%);
+
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+
+    .wrapper-modal-big {
+        max-width: min(calc(100vw - 2 * var(--p-h)), calc(var(--max-w-input-modal) * 2 + var(--p-v) + 11rem)) !important;
+    }
+}
+
+@media (min-width: 49.001em) {
+    .grid-two-column-modal-big-content {
+        width: calc(var(--max-w-input-modal) * 2 + var(--p-v));
+    }
+}
+
+@media (max-width: 49em) {
+    .wrapper-modal-big {
+        max-width: var(--max-w-phone);
+    }
+
+    .grid-two-column-modal-big-content {
+        width: var(--max-w-input-modal) !important;
+    }
+}

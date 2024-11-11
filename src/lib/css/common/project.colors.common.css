@@ -1,0 +1,13 @@
+body {
+    --color-university: #4682B4FF;
+    --color-university-darker: rgb(40, 100, 150);
+    --color-university-darker-more: rgb(20, 80, 130);
+}
+
+.color-background-university {
+    background-color: var(--color-university) !important;
+}
+
+.color-text-university {
+    color: var(--color-university) !important;
+}

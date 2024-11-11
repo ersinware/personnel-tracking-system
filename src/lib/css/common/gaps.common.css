@@ -1,0 +1,27 @@
+.g-v-d {
+    gap: var(--p-v);
+}
+
+.g-dot25 {
+    gap: .25rem;
+}
+
+.g-1 {
+    gap: 1rem;
+}
+
+.g-1dot25 {
+    gap: 1.25rem;
+}
+
+.g-1dot5 {
+    gap: 1.5rem;
+}
+
+.g-1dot75 {
+    gap: 1.75rem;
+}
+
+.g-2 {
+    gap: 2rem;
+}

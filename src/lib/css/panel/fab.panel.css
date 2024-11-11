@@ -1,0 +1,33 @@
+@media (max-width: 65em) {
+    body {
+        --bottom-fab: 3rem;
+        --height-fab: 3.375rem
+    }
+
+    .fab {
+        right: var(--p-h);
+        bottom: var(--bottom-fab);
+
+        width: var(--height-fab);
+        height: var(--height-fab);
+
+        padding: 1rem;
+
+        fill: white !important;
+        background-color: var(--color-accent) !important;
+    }
+
+    .small-screen-p-b-page-fab {
+        padding-bottom: calc(var(--bottom-fab) * 2 + var(--height-fab));
+    }
+
+    @media (hover: hover) {
+        .fab {
+            transition: background-color 0.25s ease-in-out;
+        }
+
+        .fab:hover {
+            background-color: var(--color-accent-darker) !important;
+        }
+    }
+}

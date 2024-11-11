@@ -1,0 +1,103 @@
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+}
+
+button:disabled {
+    pointer-events: none !important;
+}
+
+.button {
+    padding: .325rem 1.5rem .3rem;
+
+    color: var(--color-button) !important;
+    background-color: var(--color-accent) !important;
+
+    border-radius: calc(var(--border-radius) + .25rem);
+
+    transition: color .25s ease-in-out, background-color .25s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+:is(.button, .button-nude):not(.button-small) {
+    font-size: .775rem;
+}
+
+.button,
+.button-nude {
+    line-height: 1.5rem;
+    width: min-content;
+
+    white-space: nowrap;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    letter-spacing: .125rem;
+}
+
+.button-nude {
+    color: var(--color-accent) !important;
+    transition: color .25s ease-in-out;
+}
+
+.button-small {
+    font-size: 0.725rem;
+}
+
+.button-nude.button-nude-negative-unimportant {
+    color: var(--color-text-unimportant) !important;
+}
+
+.button-nude.button-nude-positive {
+    color: var(--color-positive) !important;
+}
+
+.button-nude.button-nude-negative {
+    color: var(--color-error) !important;
+}
+
+.button-disabled,
+.button-nude-disabled {
+    pointer-events: none !important;
+}
+
+.button.button-disabled {
+    background-color: var(--color-background-button-disabled) !important;
+    color: var(--color-button-disabled) !important;
+}
+
+:is(button, .button-nude).button-nude-disabled {
+    color: var(--color-button-disabled) !important;
+}
+
+.button-icon-disabled {
+    fill: var(--color-button-disabled) !important
+}
+
+@media (hover: hover) {
+    .button:hover {
+        box-shadow: var(--color-accent-darker) 0 0 .75rem;
+    }
+
+    .button-nude:hover {
+        color: var(--color-accent-darker) !important;
+    }
+
+    .button-nude.button-nude-negative:hover {
+        color: var(--color-error-darker) !important;
+    }
+
+    .button-nude.button-nude-positive:hover {
+        color: var(--color-positive-darker) !important;
+    }
+
+    .button-nude.button-nude-negative-unimportant:hover {
+        color: var(--color-error-darker) !important;
+    }
+}

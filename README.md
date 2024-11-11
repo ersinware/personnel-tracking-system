@@ -1,38 +1,20 @@
-# sv
+# Personnel Tracking System
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+It is a is a web application built using Node.js, SvelteKit, and SQLite, designed to allow high-authority administrators and department managers to track the work of the personnel they are responsible for. Through application's management panel, departments, users, and work entries can be added, edited, and deleted. Departments and users can be searched by name, and work entries can be filtered by personnel, department, and date. The system includes three user roles: high-authority administrator, department manager, and personnel. When a user is created, an automatically generated password is sent to the new user's email address. Users also have the ability to change their passwords. Additionally, if users forget their passwords, they can recover them using a feature that sends a link to their email with a token that expires in 5 minutes.
 
-## Creating a project
+# Notes
 
-If you're seeing this, you've probably already done this step. Congrats!
+To access the application, please go to the /giriş-yap page and use the following credentials:
+Email address: ekaraer97@gmail.com
+Password: Pass1234
 
-```bash
-# create a new project in the current directory
-npx sv create
+The application's language is Turkish. Please use Google Translate to translate the content into English.
 
-# create a new project in my-app
-npx sv create my-app
-```
+The system is currently under development. A calendar view linked to personnel will be implemented, and a calendar component will be integrated into date input fields.
 
-## Developing
+Creating a new user does not work because an e-mail address and Gmail API credentials needed in .env file.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+# Version
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+node version: v18.20.4 
+npm version : v10.7.0
